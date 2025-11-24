@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Zaperr Test Suite">
+  <test name="Login Tests">
+    <classes>
+      <class name="com.zaperr.tests.LoginTest"/>
+    </classes>
+  </test>
+</suite>
