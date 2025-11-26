@@ -44,7 +44,7 @@ public class BaseTest {
     }
 
     public void login() throws InterruptedException {
-        driver.get("http://192.168.1.31:3000");
+        driver.get("https://9cr34k91-3000.inc1.devtunnels.ms/");
         WebElement emailField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@autocomplete='email']")));
         emailField.clear();
         emailField.sendKeys("admin@gmail.com");
