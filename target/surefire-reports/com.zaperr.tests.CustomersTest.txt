@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.zaperr.tests.CustomersTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 92.44 s -- in com.zaperr.tests.CustomersTest
