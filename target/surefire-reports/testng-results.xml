@@ -2,28 +2,32 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-27T12:28:49 IST" name="Surefire suite" finished-at="2025-11-27T12:30:18 IST" duration-ms="88611">
+  <suite started-at="2025-12-03T15:18:14 IST" name="Surefire suite" finished-at="2025-12-03T15:18:53 IST" duration-ms="38416">
     <groups>
     </groups>
-    <test started-at="2025-11-27T12:28:49 IST" name="Surefire test" finished-at="2025-11-27T12:30:18 IST" duration-ms="88611">
-      <class name="com.zaperr.tests.CustomersTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.zaperr.tests.CustomersTest@3c22fc4c]" started-at="2025-11-27T12:28:49 IST" name="setupReport" finished-at="2025-11-27T12:28:49 IST" duration-ms="699" status="PASS">
+    <test started-at="2025-12-03T15:18:14 IST" name="Surefire test" finished-at="2025-12-03T15:18:53 IST" duration-ms="38416">
+      <class name="com.zaperr.tests.SettingsInviteUserPermissionsTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:com.zaperr.tests.SettingsInviteUserPermissionsTest@3c22fc4c]" started-at="2025-12-03T15:18:14 IST" name="setupReport" finished-at="2025-12-03T15:18:14 IST" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.zaperr.tests.CustomersTest@3c22fc4c]" started-at="2025-11-27T12:28:49 IST" name="setUpBrowser" finished-at="2025-11-27T12:28:52 IST" duration-ms="2964" status="PASS">
+        <test-method is-config="true" signature="setUpBrowser()[pri:0, instance:com.zaperr.tests.SettingsInviteUserPermissionsTest@3c22fc4c]" started-at="2025-12-03T15:18:15 IST" name="setUpBrowser" finished-at="2025-12-03T15:18:16 IST" duration-ms="1357" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBrowser -->
-        <test-method signature="customersFilterAndLogout()[pri:5, instance:com.zaperr.tests.CustomersTest@3c22fc4c]" started-at="2025-11-27T12:28:52 IST" name="customersFilterAndLogout" finished-at="2025-11-27T12:30:18 IST" duration-ms="85575" status="PASS">
+        <test-method signature="inviteUserWithRandomPermissions()[pri:7, instance:com.zaperr.tests.SettingsInviteUserPermissionsTest@3c22fc4c]" started-at="2025-12-03T15:18:16 IST" name="inviteUserWithRandomPermissions" finished-at="2025-12-03T15:18:53 IST" duration-ms="36813" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- customersFilterAndLogout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.zaperr.tests.CustomersTest@3c22fc4c]" started-at="2025-11-27T12:30:18 IST" name="tearDown" finished-at="2025-11-27T12:30:20 IST" duration-ms="1747" status="PASS">
+        </test-method> <!-- inviteUserWithRandomPermissions -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.zaperr.tests.SettingsInviteUserPermissionsTest@3c22fc4c]" started-at="2025-12-03T15:18:53 IST" name="quitBrowser" finished-at="2025-12-03T15:18:53 IST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.zaperr.tests.CustomersTest -->
+        </test-method> <!-- quitBrowser -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:com.zaperr.tests.SettingsInviteUserPermissionsTest@3c22fc4c]" started-at="2025-12-03T15:18:53 IST" name="tearDownSuite" finished-at="2025-12-03T15:18:53 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- com.zaperr.tests.SettingsInviteUserPermissionsTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

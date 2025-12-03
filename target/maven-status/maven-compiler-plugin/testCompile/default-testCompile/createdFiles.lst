@@ -1,1 +1,11 @@
+com\zaperr\tests\DashboardMenuButtonNavigationTest.class
+com\zaperr\tests\MerchantOrFAdminAutoLoginTest.class
+com\zaperr\tests\SettingsInviteUserPermissionsTest.class
+com\zaperr\tests\SettingsOrdersTest.class
+com\zaperr\tests\BaseTest.class
+com\zaperr\tests\CustomersTest.class
+com\zaperr\tests\SettingsPageNavigationTest.class
+com\zaperr\tests\OrdersStatusUpdateOrderAssignTest.class
+com\zaperr\tests\LoginLogoutTest.class
+com\zaperr\tests\SettingsGeneralTest.class
 com\zaperr\tests\ExtentReportManager.class

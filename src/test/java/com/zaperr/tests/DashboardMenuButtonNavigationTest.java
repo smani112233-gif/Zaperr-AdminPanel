@@ -1,7 +1,6 @@
 package com.zaperr.tests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
@@ -20,10 +19,10 @@ public class DashboardMenuButtonNavigationTest extends BaseTest {
             login();
             t.info("Logged in successfully.");
 
-            // 2️⃣ Click hamburger (menu button) automatically
-            clickHamburger(t);
+            // ❌ NO hamburger click here anymore.
+            // We assume sidebar is already open after login.
 
-            // 3️⃣ Click menu items using same locators Selenium IDE used
+            // 2️⃣ Click menu items using the same structure Selenium IDE used
             int[] menuIndices = {2, 3, 4, 5, 7};
 
             for (int index : menuIndices) {
@@ -42,22 +41,18 @@ public class DashboardMenuButtonNavigationTest extends BaseTest {
                     t.info("Clicked side menu item nth-child(" + index + ")"
                            + (label.isEmpty() ? "" : " → " + label));
 
+                    // small pause so page can load
                     Thread.sleep(1000);
 
-                    // Reopen menu if it collapses (best-effort)
-                    try {
-                        clickHamburger(t);
-                        Thread.sleep(500);
-                    } catch (Exception ignore) {
-                        // ignore if hamburger not present
-                    }
+                    // ❌ NO re-open hamburger here either.
+                    // We won't toggle the menu at all.
 
                 } catch (Exception e) {
                     t.warning("Could not click menu item nth-child(" + index + "): " + e.getMessage());
                 }
             }
 
-            // 4️⃣ Optional: click dashboard title
+            // 3️⃣ Optional: click dashboard title
             try {
                 WebElement dashboardTitle = wait.until(
                     ExpectedConditions.elementToBeClickable(
@@ -79,46 +74,6 @@ public class DashboardMenuButtonNavigationTest extends BaseTest {
                     MediaEntityBuilder.createScreenCaptureFromPath(path).build());
             } catch (Exception ignore) {}
             throw new RuntimeException(e);
-        }
-    }
-
-    /**
-     * Clicks the hamburger / drawer button automatically.
-     */
-    private void clickHamburger(ExtentTest t) {
-        try {
-            // primary locator (aria-label)
-            WebElement menuButton = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                    By.cssSelector("button[aria-label='open drawer']")
-                )
-            );
-            try {
-                menuButton.click();
-                t.info("Clicked hamburger (open drawer button) by aria-label.");
-            } catch (Exception e) {
-                // JS click fallback
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", menuButton);
-                t.info("Clicked hamburger using JS (aria-label='open drawer').");
-            }
-        } catch (Exception firstFail) {
-            // backup locator: icon button on left
-            try {
-                WebElement menuButton = wait.until(
-                    ExpectedConditions.elementToBeClickable(
-                        By.cssSelector(".MuiIconButton-edgeStart")
-                    )
-                );
-                try {
-                    menuButton.click();
-                    t.info("Clicked hamburger using backup locator (.MuiIconButton-edgeStart).");
-                } catch (Exception e2) {
-                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", menuButton);
-                    t.info("Clicked hamburger using JS backup (.MuiIconButton-edgeStart).");
-                }
-            } catch (Exception finalFail) {
-                t.warning("Hamburger menu not found or not clickable: " + finalFail.getMessage());
-            }
         }
     }
 }

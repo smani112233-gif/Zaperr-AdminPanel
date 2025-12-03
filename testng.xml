@@ -1,8 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Zaperr Test Suite">
-  <test name="Login Tests">
+  <test name="Zaperr Admin Panel Tests">
     <classes>
-      <class name="com.zaperr.tests.LoginTest"/>
+      <!-- <class name="com.zaperr.tests.LoginTest"/> -->
+      <class name="com.zaperr.tests.LoginLogoutTest"/>
+      <class name="com.zaperr.tests.DashboardMenuButtonNavigationTest"/>
+      <class name="com.zaperr.tests.MerchantOrFAdminAutoLoginTest"/>
+      <class name="com.zaperr.tests.OrdersStatusUpdateOrderAssignTest"/>
+      <class name="com.zaperr.tests.CustomersTest"/>
+      <class name="com.zaperr.tests.SettingsPageNavigationTest"/>
+      <class name="com.zaperr.tests.SettingsInviteUserPermissionsTest"/>
+      <class name="com.zaperr.tests.SettingsGeneralTest"/>
+      <class name="com.zaperr.tests.SettingsOrdersTest"/>
     </classes>
   </test>
 </suite>

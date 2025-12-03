@@ -21,8 +21,8 @@ public class MerchantOrFAdminAutoLoginTest extends BaseTest {
             login();
             t.info("Logged in as admin successfully.");
 
-            // 2️⃣ OPEN SIDEBAR MENU AUTOMATICALLY (no manual click needed)
-            openSidebar(t);
+            // // 2️⃣ OPEN SIDEBAR MENU AUTOMATICALLY (no manual click needed)
+            // openSidebar(t);
 
             // 3️⃣ Click Franchise Admin (side menu item 3)
             WebElement franchiseAdminMenu = wait.until(
@@ -114,48 +114,6 @@ public class MerchantOrFAdminAutoLoginTest extends BaseTest {
                     MediaEntityBuilder.createScreenCaptureFromPath(path).build());
             } catch (Exception ignore) {}
             throw new RuntimeException(e);
-        }
-    }
-
-    /**
-     * Explicitly opens the left sidebar menu using known locators.
-     * Call this after login or whenever the menu might be closed.
-     */
-    private void openSidebar(ExtentTest t) {
-        try {
-            // Primary: aria-label locator
-            WebElement menuButton = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                    By.cssSelector("button[aria-label='open drawer']")
-                )
-            );
-            try {
-                menuButton.click();
-                t.info("Sidebar menu opened via aria-label='open drawer'.");
-            } catch (Exception e) {
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", menuButton);
-                t.info("Sidebar menu opened via JS click (aria-label='open drawer').");
-            }
-            Thread.sleep(800);
-        } catch (Exception firstFail) {
-            // Fallback: edgeStart icon button
-            try {
-                WebElement menuButton = wait.until(
-                    ExpectedConditions.elementToBeClickable(
-                        By.cssSelector(".MuiIconButton-edgeStart")
-                    )
-                );
-                try {
-                    menuButton.click();
-                    t.info("Sidebar menu opened via .MuiIconButton-edgeStart.");
-                } catch (Exception e2) {
-                    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", menuButton);
-                    t.info("Sidebar menu opened via JS click (.MuiIconButton-edgeStart).");
-                }
-                Thread.sleep(800);
-            } catch (Exception finalFail) {
-                t.warning("Could not open sidebar menu automatically: " + finalFail.getMessage());
-            }
         }
     }
 

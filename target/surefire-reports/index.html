@@ -103,7 +103,7 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.zaperr.tests.CustomersTest" class="method navigator-link" hash-for-method="customersFilterAndLogout">customersFilterAndLogout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.zaperr.tests.SettingsInviteUserPermissionsTest" class="method navigator-link" hash-for-method="inviteUserWithRandomPermissions">inviteUserWithRandomPermissions</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -121,14 +121,14 @@
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.zaperr.tests.CustomersTest</span>
+              <span class="class-name">com.zaperr.tests.SettingsInviteUserPermissionsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="customersFilterAndLogout">
-                  </a> <!-- customersFilterAndLogout -->
-                  <span class="method-name">customersFilterAndLogout</span>
+                  <a name="inviteUserWithRandomPermissions">
+                  </a> <!-- inviteUserWithRandomPermissions -->
+                  <span class="method-name">inviteUserWithRandomPermissions</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -144,7 +144,7 @@
 &lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.zaperr.tests.CustomersTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.SettingsInviteUserPermissionsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -186,14 +186,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'customersFilterAndLogout')
-data.setCell(0, 2, 'com.zaperr.tests.CustomersTest')
-data.setCell(0, 3, 85575);
+data.setCell(0, 1, 'inviteUserWithRandomPermissions')
+data.setCell(0, 2, 'com.zaperr.tests.SettingsInviteUserPermissionsTest')
+data.setCell(0, 3, 36813);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 36 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -219,22 +219,26 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.zaperr.tests.CustomersTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.zaperr.tests.SettingsInviteUserPermissionsTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-class before">
+              <div class="configuration-method before">
                 <span class="method-name">setUpBrowser</span>
-                <span class="method-start">735 ms</span>
-              </div> <!-- configuration-class before -->
+                <span class="method-start">302 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">customersFilterAndLogout</span>
-                <span class="method-start">3731 ms</span>
+                <span class="method-name">inviteUserWithRandomPermissions</span>
+                <span class="method-start">1660 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">38476 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">89362 ms</span>
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">38699 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

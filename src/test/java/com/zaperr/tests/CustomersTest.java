@@ -1,7 +1,6 @@
 package com.zaperr.tests;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.Test;
@@ -20,8 +19,8 @@ public class CustomersTest extends BaseTest {
             login();
             t.info("Logged in successfully.");
 
-            // 2️⃣ Open Sidebar Automatically
-            openSidebar(t);
+            // // 2️⃣ Open Sidebar Automatically
+            // openSidebar(t);
 
             // 3️⃣ Click Customers menu (4th item)
             WebElement customersMenu = wait.until(
@@ -66,22 +65,6 @@ public class CustomersTest extends BaseTest {
             } catch (Exception ignore) {
             }
             throw new RuntimeException(e);
-        }
-    }
-
-    /**
-     * Helper: open sidebar menu if collapsed
-     */
-    private void openSidebar(ExtentTest t) {
-        try {
-            WebElement menuButton = wait.until(
-                    ExpectedConditions.elementToBeClickable(By.cssSelector("button[aria-label='open drawer']"))
-            );
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", menuButton);
-            Thread.sleep(700);
-            t.info("Sidebar opened.");
-        } catch (Exception e) {
-            t.warning("Sidebar may already be open. Details: " + e.getMessage());
         }
     }
 
