@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Zaperr_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Zaperr Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Zaperr_Test_Suite" class="navigator-link ">
+                    <span>C:\Users\user\Zaperr\zaperr-selenium\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Zaperr_Test_Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Zaperr_Test_Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Zaperr_Test_Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Zaperr_Test_Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Zaperr_Test_Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Zaperr_Test_Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 3 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Zaperr_Test_Suite" class="hide-methods failed suite-Zaperr_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Zaperr_Test_Suite -->
+                      <a href="#" panel-name="suite-Zaperr_Test_Suite" class="show-methods failed suite-Zaperr_Test_Suite"> (show)</a> <!-- show-methods failed suite-Zaperr_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Zaperr_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.SettingsOrdersTest" class="method navigator-link" hash-for-method="configureOrderSettings">configureOrderSettings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.LoginLogoutTest" class="method navigator-link" hash-for-method="loginLogoutFlow">loginLogoutFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.SettingsGeneralTest" class="method navigator-link" hash-for-method="settingsGeneralUpdate">settingsGeneralUpdate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Zaperr_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Zaperr_Test_Suite" class="hide-methods passed suite-Zaperr_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Zaperr_Test_Suite -->
+                      <a href="#" panel-name="suite-Zaperr_Test_Suite" class="show-methods passed suite-Zaperr_Test_Suite"> (show)</a> <!-- show-methods passed suite-Zaperr_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Zaperr_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.CustomersTest" class="method navigator-link" hash-for-method="customersFilterAndLogout">customersFilterAndLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.DashboardMenuButtonNavigationTest" class="method navigator-link" hash-for-method="dashboardMenuNavigation">dashboardMenuNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.SettingsInviteUserPermissionsTest" class="method navigator-link" hash-for-method="inviteUserWithRandomPermissions">inviteUserWithRandomPermissions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.MerchantOrFAdminAutoLoginTest" class="method navigator-link" hash-for-method="merchantOrFAdminAutoLogin">merchantOrFAdminAutoLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.OrdersStatusUpdateOrderAssignTest" class="method navigator-link" hash-for-method="ordersStatusUpdateAndAssign">ordersStatusUpdateAndAssign</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Zaperr_Test_Suite" title="com.zaperr.tests.SettingsPageNavigationTest" class="method navigator-link" hash-for-method="settingsPageNavigation">settingsPageNavigation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Zaperr_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Zaperr_Test_Suite" class="panel Zaperr_Test_Suite">
+          <div class="suite-Zaperr_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.zaperr.tests.SettingsOrdersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="configureOrderSettings">
+                  </a> <!-- configureOrderSettings -->
+                  <span class="method-name">configureOrderSettings</span>
+                  <div class="stack-trace">java.lang.RuntimeException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete=&apos;email&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58634}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58634/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d6e9e8f2a6ea6fdd847df589f5097f9
+	at com.zaperr.tests.SettingsOrdersTest.configureOrderSettings(SettingsOrdersTest.java:163)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete=&apos;email&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58634}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58634/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d6e9e8f2a6ea6fdd847df589f5097f9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zaperr.tests.BaseTest.login(BaseTest.java:72)
+	at com.zaperr.tests.SettingsOrdersTest.configureOrderSettings(SettingsOrdersTest.java:20)
+	... 30 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-failed -->
+          <div class="suite-Zaperr_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.zaperr.tests.SettingsGeneralTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="settingsGeneralUpdate">
+                  </a> <!-- settingsGeneralUpdate -->
+                  <span class="method-name">settingsGeneralUpdate</span>
+                  <div class="stack-trace">java.lang.RuntimeException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete=&apos;email&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61414/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74f71b6a8c5d69f5920329b6a390f637
+	at com.zaperr.tests.SettingsGeneralTest.settingsGeneralUpdate(SettingsGeneralTest.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete=&apos;email&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61414/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74f71b6a8c5d69f5920329b6a390f637
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zaperr.tests.BaseTest.login(BaseTest.java:72)
+	at com.zaperr.tests.SettingsGeneralTest.settingsGeneralUpdate(SettingsGeneralTest.java:20)
+	... 30 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-failed -->
+          <div class="suite-Zaperr_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.zaperr.tests.LoginLogoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginLogoutFlow">
+                  </a> <!-- loginLogoutFlow -->
+                  <span class="method-name">loginLogoutFlow</span>
+                  <div class="stack-trace">java.lang.RuntimeException: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-tqe8qa-MuiAvatar-root&quot;&gt;...&lt;/div&gt; is not clickable at point (1209, 32). Other element would receive the click: &lt;div class=&quot;css-183mqmm&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d955dad9e0f061c00b7c0c2cb7435bf, clickElement {id=f.3F7BF88C7630E2437614BD2633884C08.d.ADD8AB293C9848D28BCE83431F9974E2.e.40}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49856/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4d955dad9e0f061c00b7c0c2cb7435bf)] -&gt; css selector: .MuiAvatar-root]
+Session ID: 4d955dad9e0f061c00b7c0c2cb7435bf
+	at com.zaperr.tests.LoginLogoutTest.loginLogoutFlow(LoginLogoutTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-tqe8qa-MuiAvatar-root&quot;&gt;...&lt;/div&gt; is not clickable at point (1209, 32). Other element would receive the click: &lt;div class=&quot;css-183mqmm&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d955dad9e0f061c00b7c0c2cb7435bf, clickElement {id=f.3F7BF88C7630E2437614BD2633884C08.d.ADD8AB293C9848D28BCE83431F9974E2.e.40}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49856/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4d955dad9e0f061c00b7c0c2cb7435bf)] -&gt; css selector: .MuiAvatar-root]
+Session ID: 4d955dad9e0f061c00b7c0c2cb7435bf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.zaperr.tests.LoginLogoutTest.loginLogoutFlow(LoginLogoutTest.java:26)
+	... 30 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-failed -->
+          <div class="suite-Zaperr_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zaperr.tests.SettingsPageNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="settingsPageNavigation">
+                  </a> <!-- settingsPageNavigation -->
+                  <span class="method-name">settingsPageNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-passed -->
+          <div class="suite-Zaperr_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zaperr.tests.MerchantOrFAdminAutoLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="merchantOrFAdminAutoLogin">
+                  </a> <!-- merchantOrFAdminAutoLogin -->
+                  <span class="method-name">merchantOrFAdminAutoLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-passed -->
+          <div class="suite-Zaperr_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zaperr.tests.CustomersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="customersFilterAndLogout">
+                  </a> <!-- customersFilterAndLogout -->
+                  <span class="method-name">customersFilterAndLogout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-passed -->
+          <div class="suite-Zaperr_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zaperr.tests.DashboardMenuButtonNavigationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dashboardMenuNavigation">
+                  </a> <!-- dashboardMenuNavigation -->
+                  <span class="method-name">dashboardMenuNavigation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-passed -->
+          <div class="suite-Zaperr_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zaperr.tests.SettingsInviteUserPermissionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inviteUserWithRandomPermissions">
+                  </a> <!-- inviteUserWithRandomPermissions -->
+                  <span class="method-name">inviteUserWithRandomPermissions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-passed -->
+          <div class="suite-Zaperr_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.zaperr.tests.OrdersStatusUpdateOrderAssignTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ordersStatusUpdateAndAssign">
+                  </a> <!-- ordersStatusUpdateAndAssign -->
+                  <span class="method-name">ordersStatusUpdateAndAssign</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Zaperr_Test_Suite-class-passed -->
+        </div> <!-- panel Zaperr_Test_Suite -->
+        <div panel-name="test-xml-Zaperr_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\user\Zaperr\zaperr-selenium\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Zaperr Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Zaperr Admin Panel Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.zaperr.tests.LoginLogoutTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.DashboardMenuButtonNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.MerchantOrFAdminAutoLoginTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.OrdersStatusUpdateOrderAssignTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.CustomersTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.SettingsPageNavigationTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.SettingsInviteUserPermissionsTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.SettingsGeneralTest&quot;/&gt;
+      &lt;class name=&quot;com.zaperr.tests.SettingsOrdersTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Zaperr Admin Panel Tests --&gt;
+&lt;/suite&gt; &lt;!-- Zaperr Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Zaperr_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Zaperr Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Zaperr Admin Panel Tests (9 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Zaperr_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Zaperr Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Zaperr_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Zaperr Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Zaperr_Test_Suite');
+function tableData_Zaperr_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'settingsPageNavigation')
+data.setCell(0, 2, 'com.zaperr.tests.SettingsPageNavigationTest')
+data.setCell(0, 3, 175140);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'customersFilterAndLogout')
+data.setCell(1, 2, 'com.zaperr.tests.CustomersTest')
+data.setCell(1, 3, 73439);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'inviteUserWithRandomPermissions')
+data.setCell(2, 2, 'com.zaperr.tests.SettingsInviteUserPermissionsTest')
+data.setCell(2, 3, 37699);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'dashboardMenuNavigation')
+data.setCell(3, 2, 'com.zaperr.tests.DashboardMenuButtonNavigationTest')
+data.setCell(3, 3, 29725);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'configureOrderSettings')
+data.setCell(4, 2, 'com.zaperr.tests.SettingsOrdersTest')
+data.setCell(4, 3, 20827);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'settingsGeneralUpdate')
+data.setCell(5, 2, 'com.zaperr.tests.SettingsGeneralTest')
+data.setCell(5, 3, 20810);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'merchantOrFAdminAutoLogin')
+data.setCell(6, 2, 'com.zaperr.tests.MerchantOrFAdminAutoLoginTest')
+data.setCell(6, 3, 17562);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ordersStatusUpdateAndAssign')
+data.setCell(7, 2, 'com.zaperr.tests.OrdersStatusUpdateOrderAssignTest')
+data.setCell(7, 3, 14469);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'loginLogoutFlow')
+data.setCell(8, 2, 'com.zaperr.tests.LoginLogoutTest')
+data.setCell(8, 3, 13832);
+window.suiteTableData['Zaperr_Test_Suite']= { tableData: data, tableDiv: 'times-div-Zaperr_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Zaperr_Test_Suite">
+              </div> <!-- times-div-Zaperr_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Zaperr_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Zaperr Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Zaperr_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">16 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zaperr.tests.SettingsPageNavigationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zaperr.tests.SettingsOrdersTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zaperr.tests.MerchantOrFAdminAutoLoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zaperr.tests.SettingsGeneralTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zaperr.tests.CustomersTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zaperr.tests.DashboardMenuButtonNavigationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zaperr.tests.SettingsInviteUserPermissionsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.zaperr.tests.OrdersStatusUpdateOrderAssignTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setupReport</span>
+                <br/>
+                <span class="ignored-method-name">tearDownSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Zaperr_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.LoginLogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">305 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">loginLogoutFlow</span>
+                <span class="method-start">1886 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">15727 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.DashboardMenuButtonNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">16002 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">dashboardMenuNavigation</span>
+                <span class="method-start">16905 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">46631 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.MerchantOrFAdminAutoLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">46960 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">merchantOrFAdminAutoLogin</span>
+                <span class="method-start">47688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">65251 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.OrdersStatusUpdateOrderAssignTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">65450 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ordersStatusUpdateAndAssign</span>
+                <span class="method-start">66239 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">80710 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.CustomersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">80878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">customersFilterAndLogout</span>
+                <span class="method-start">81620 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">155060 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.SettingsPageNavigationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">155331 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">settingsPageNavigation</span>
+                <span class="method-start">156084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">331227 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.SettingsInviteUserPermissionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">331266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">inviteUserWithRandomPermissions</span>
+                <span class="method-start">332048 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">369747 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.SettingsGeneralTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">369955 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">settingsGeneralUpdate</span>
+                <span class="method-start">370732 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">391545 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.SettingsOrdersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpBrowser</span>
+                <span class="method-start">391713 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">configureOrderSettings</span>
+                <span class="method-start">392532 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitBrowser</span>
+                <span class="method-start">413360 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.zaperr.tests.LoginLogoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDownSuite</span>
+                <span class="method-start">413656 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

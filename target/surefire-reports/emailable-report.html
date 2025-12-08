@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Zaperr Test Suite</th></tr>
+<tr><td><a href="#t0">Zaperr Admin Panel Tests</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">413,349</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Zaperr Test Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Zaperr Admin Panel Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.zaperr.tests.LoginLogoutTest</td><td><a href="#m0">loginLogoutFlow</a></td><td rowspan="1">1765196511147</td><td rowspan="1">13832</td></tr><tr class="failedodd"><td rowspan="1">com.zaperr.tests.SettingsGeneralTest</td><td><a href="#m1">settingsGeneralUpdate</a></td><td rowspan="1">1765196879993</td><td rowspan="1">20810</td></tr><tr class="failedeven"><td rowspan="1">com.zaperr.tests.SettingsOrdersTest</td><td><a href="#m2">configureOrderSettings</a></td><td rowspan="1">1765196901793</td><td rowspan="1">20827</td></tr><tr><th colspan="4">Zaperr Admin Panel Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.zaperr.tests.CustomersTest</td><td><a href="#m3">customersFilterAndLogout</a></td><td rowspan="1">1765196590881</td><td rowspan="1">73439</td></tr><tr class="passedodd"><td rowspan="1">com.zaperr.tests.DashboardMenuButtonNavigationTest</td><td><a href="#m4">dashboardMenuNavigation</a></td><td rowspan="1">1765196526166</td><td rowspan="1">29725</td></tr><tr class="passedeven"><td rowspan="1">com.zaperr.tests.MerchantOrFAdminAutoLoginTest</td><td><a href="#m5">merchantOrFAdminAutoLogin</a></td><td rowspan="1">1765196556949</td><td rowspan="1">17562</td></tr><tr class="passedodd"><td rowspan="1">com.zaperr.tests.OrdersStatusUpdateOrderAssignTest</td><td><a href="#m6">ordersStatusUpdateAndAssign</a></td><td rowspan="1">1765196575500</td><td rowspan="1">14469</td></tr><tr class="passedeven"><td rowspan="1">com.zaperr.tests.SettingsInviteUserPermissionsTest</td><td><a href="#m7">inviteUserWithRandomPermissions</a></td><td rowspan="1">1765196841309</td><td rowspan="1">37699</td></tr><tr class="passedodd"><td rowspan="1">com.zaperr.tests.SettingsPageNavigationTest</td><td><a href="#m8">settingsPageNavigation</a></td><td rowspan="1">1765196665345</td><td rowspan="1">175140</td></tr></tbody>
+</table>
+<h2>Zaperr Admin Panel Tests</h2><h3 id="m0">com.zaperr.tests.LoginLogoutTest#loginLogoutFlow</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-tqe8qa-MuiAvatar-root&quot;&gt;...&lt;/div&gt; is not clickable at point (1209, 32). Other element would receive the click: &lt;div class=&quot;css-183mqmm&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d955dad9e0f061c00b7c0c2cb7435bf, clickElement {id=f.3F7BF88C7630E2437614BD2633884C08.d.ADD8AB293C9848D28BCE83431F9974E2.e.40}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49856/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4d955dad9e0f061c00b7c0c2cb7435bf)] -&gt; css selector: .MuiAvatar-root]
+Session ID: 4d955dad9e0f061c00b7c0c2cb7435bf
+	at com.zaperr.tests.LoginLogoutTest.loginLogoutFlow(LoginLogoutTest.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-tqe8qa-MuiAvatar-root&quot;&gt;...&lt;/div&gt; is not clickable at point (1209, 32). Other element would receive the click: &lt;div class=&quot;css-183mqmm&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=142.0.7444.176)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4d955dad9e0f061c00b7c0c2cb7435bf, clickElement {id=f.3F7BF88C7630E2437614BD2633884C08.d.ADD8AB293C9848D28BCE83431F9974E2.e.40}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49856}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49856/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (4d955dad9e0f061c00b7c0c2cb7435bf)] -&gt; css selector: .MuiAvatar-root]
+Session ID: 4d955dad9e0f061c00b7c0c2cb7435bf
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.zaperr.tests.LoginLogoutTest.loginLogoutFlow(LoginLogoutTest.java:26)
+	... 30 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.zaperr.tests.SettingsGeneralTest#settingsGeneralUpdate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete=&apos;email&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61414/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74f71b6a8c5d69f5920329b6a390f637
+	at com.zaperr.tests.SettingsGeneralTest.settingsGeneralUpdate(SettingsGeneralTest.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete=&apos;email&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61414}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61414/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 74f71b6a8c5d69f5920329b6a390f637
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zaperr.tests.BaseTest.login(BaseTest.java:72)
+	at com.zaperr.tests.SettingsGeneralTest.settingsGeneralUpdate(SettingsGeneralTest.java:20)
+	... 30 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.zaperr.tests.SettingsOrdersTest#configureOrderSettings</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete=&apos;email&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58634}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58634/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d6e9e8f2a6ea6fdd847df589f5097f9
+	at com.zaperr.tests.SettingsOrdersTest.configureOrderSettings(SettingsOrdersTest.java:163)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete=&apos;email&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58634}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58634/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d6e9e8f2a6ea6fdd847df589f5097f9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.zaperr.tests.BaseTest.login(BaseTest.java:72)
+	at com.zaperr.tests.SettingsOrdersTest.configureOrderSettings(SettingsOrdersTest.java:20)
+	... 30 more
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.zaperr.tests.CustomersTest#customersFilterAndLogout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.zaperr.tests.DashboardMenuButtonNavigationTest#dashboardMenuNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.zaperr.tests.MerchantOrFAdminAutoLoginTest#merchantOrFAdminAutoLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.zaperr.tests.OrdersStatusUpdateOrderAssignTest#ordersStatusUpdateAndAssign</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.zaperr.tests.SettingsInviteUserPermissionsTest#inviteUserWithRandomPermissions</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.zaperr.tests.SettingsPageNavigationTest#settingsPageNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
