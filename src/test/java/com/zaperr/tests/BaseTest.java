@@ -6,7 +6,8 @@ import org.openqa.selenium.support.ui.*;
 import org.testng.annotations.*;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
@@ -97,8 +98,8 @@ public class BaseTest {
         String filePath = dir + testName + "_" + timestamp + ".png";
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            Files.createDirectories(Paths.get(dir));
-            Files.copy(src.toPath(), Paths.get(filePath));
+            Files.createDirectories(Path.of(dir));
+            Files.copy(src.toPath(), Path.of(filePath));
         } catch (IOException e) {
             e.printStackTrace();
         }

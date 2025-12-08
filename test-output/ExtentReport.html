@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Zaperr Selenium Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 3, 2025 03:18:14 pm</span></a>
+<a href="#"><span class="badge badge-primary">Dec 8, 2025 05:37:30 pm</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,8 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="warning" href="#"><span>Warning</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,25 +76,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Settings - Invite User With Random Permissions</p>
+            <p class="name">Login & Logout Test</p>
             <p class="text-sm">
-              <span>3:18:16 pm</span> / <span>00:00:36:809</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>5:37:33 pm</span> / <span>00:01:20:743</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Settings - Invite User With Random Permissions</h5>
-<span class='badge badge-success'>12.03.2025 3:18:16 pm</span>
-<span class='badge badge-danger'>12.03.2025 3:18:53 pm</span>
-<span class='badge badge-default'>00:00:36:809</span>
+<h5 class="test-status text-fail">Login & Logout Test</h5>
+<span class='badge badge-success'>12.08.2025 5:37:33 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:38:54 pm</span>
+<span class='badge badge-default'>00:01:20:743</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -103,101 +105,878 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:38:54 pm</td>
+        <td>
+          ? Login-Logout flow failed: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete='email'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61186}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61186/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf59ccada6f2dbc26dae6c74814c573e
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='c:\Users\user\Zaperr\zaperr-selenium/test-output/screenshots/LoginLogoutTest_20251208173853.png' src="c:\Users\user\Zaperr\zaperr-selenium/test-output/screenshots/LoginLogoutTest_20251208173853.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Dashboard Menu Button Navigation</p>
+            <p class="text-sm">
+              <span>5:38:55 pm</span> / <span>00:00:20:553</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Dashboard Menu Button Navigation</h5>
+<span class='badge badge-success'>12.08.2025 5:38:55 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:39:15 pm</span>
+<span class='badge badge-default'>00:00:20:553</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:39:15 pm</td>
+        <td>
+          ? Dashboard menu navigation failed: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete='email'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57740/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f59612319b393d3cbbb7721b4feff3fd
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='c:\Users\user\Zaperr\zaperr-selenium/test-output/screenshots/DashboardMenuButtonNavigationTest_20251208173915.png' src="c:\Users\user\Zaperr\zaperr-selenium/test-output/screenshots/DashboardMenuButtonNavigationTest_20251208173915.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Merchant / Franchise Admin Auto Login Test</p>
+            <p class="text-sm">
+              <span>5:39:16 pm</span> / <span>00:00:32:491</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Merchant / Franchise Admin Auto Login Test</h5>
+<span class='badge badge-success'>12.08.2025 5:39:16 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:39:49 pm</span>
+<span class='badge badge-default'>00:00:32:491</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:39:49 pm</td>
+        <td>
+          ? Merchant / Franchise Admin auto-login test failed: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@autocomplete='email'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64522/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5509b7887d9d66a4fa64890715682be1
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='c:\Users\user\Zaperr\zaperr-selenium/test-output/screenshots/MerchantOrFAdminAutoLoginTest_20251208173949.png' src="c:\Users\user\Zaperr\zaperr-selenium/test-output/screenshots/MerchantOrFAdminAutoLoginTest_20251208173949.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Orders Status Update & Order Assign Test</p>
+            <p class="text-sm">
+              <span>5:39:50 pm</span> / <span>00:00:19:849</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Orders Status Update & Order Assign Test</h5>
+<span class='badge badge-success'>12.08.2025 5:39:50 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:40:10 pm</span>
+<span class='badge badge-default'>00:00:19:849</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:25 pm</td>
+        <td>5:40:01 pm</td>
+        <td>
+          Logged in as admin successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:01 pm</td>
+        <td>
+          Opened side menu item 2 ? Orders
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:04 pm</td>
+        <td>
+          Updated order status [order-status-677fd28c84c2ef5caa011d7d] ? 'PayFailed'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:04 pm</td>
+        <td>
+          Updated order status [order-status-674d610a52719623389622d0] ? 'PaySuccess'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 pm</td>
+        <td>
+          Updated order status [order-status-677fd8f484c2ef5caa011d80] ? 'PaySuccess'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 pm</td>
+        <td>
+          Updated order status [order-status-6780f975bda0445bb37a241c] ? 'Paid'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 pm</td>
+        <td>
+          Updated order status [order-status-677fd75b84c2ef5caa011d7f] ? 'Accepted'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 pm</td>
+        <td>
+          Updated order status [order-status-674ab1b6a32970e259ed5ef1] ? 'Ready'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 pm</td>
+        <td>
+          Updated order status [order-status-677fd3eb84c2ef5caa011d7e] ? 'Collected'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 pm</td>
+        <td>
+          Updated order status [order-status-674ad8cca32970e259ed5ef4] ? 'Completed'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 pm</td>
+        <td>
+          Updated order status [order-status-67810855bda0445bb37a241d] ? 'Cancelled'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:05 pm</td>
+        <td>
+          Updated all configured order statuses.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:06 pm</td>
+        <td>
+          Clicked assign icon in row 7, column 11.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:07 pm</td>
+        <td>
+          Selected first option in assign popup (delivery partner / merchant).
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:07 pm</td>
+        <td>
+          Clicked confirm/assign button (.css-138zggh-MuiButtonBase-root-MuiButton-root).
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:07 pm</td>
+        <td>
+          Scrolled down slightly in Orders table.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>5:40:09 pm</td>
+        <td>
+          Could not click Dashboard menu item: element click intercepted: Element <span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10kunf-MuiTypography-root">...</span> is not clickable at point (119, 96). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0e76f5724abae4f0556096d9f0abb9c, clickElement {id=f.BDA8AA949C70ACBD95FE7160E5009CE6.d.325651AA3525FCD93F17BA54D07535E2.e.117}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58424/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e0e76f5724abae4f0556096d9f0abb9c)] -> css selector: .MuiListItem-root:nth-child(1) .MuiTypography-root]
+Session ID: e0e76f5724abae4f0556096d9f0abb9c
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>5:40:10 pm</td>
+        <td>
+          Logout from Orders test encountered an issue: element click intercepted: Element <button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeEnd MuiIconButton-sizeLarge css-1r29m35-MuiButtonBase-root-MuiIconButton-root" tabindex="0" type="button" aria-label="account of current user" aria-haspopup="true">...</button> is not clickable at point (1265, 32). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);"></div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e0e76f5724abae4f0556096d9f0abb9c, clickElement {id=f.BDA8AA949C70ACBD95FE7160E5009CE6.d.325651AA3525FCD93F17BA54D07535E2.e.120}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58424}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58424/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e0e76f5724abae4f0556096d9f0abb9c)] -> css selector: .MuiIconButton-edgeEnd]
+Session ID: e0e76f5724abae4f0556096d9f0abb9c
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:40:10 pm</td>
+        <td>
+          ? Orders status update & order assign flow executed successfully (with warnings if some optional steps failed).
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="warning" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Customers Page Test</p>
+            <p class="text-sm">
+              <span>5:40:11 pm</span> / <span>00:01:14:166</span>
+              <span class="badge warning-bg log float-right">Warning</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-warning">Customers Page Test</h5>
+<span class='badge badge-success'>12.08.2025 5:40:11 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:41:25 pm</span>
+<span class='badge badge-default'>00:01:14:166</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:40:21 pm</td>
         <td>
           Logged in successfully.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:25 pm</td>
+        <td>5:40:21 pm</td>
+        <td>
+          Navigated to Customers page.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>5:40:43 pm</td>
+        <td>
+          Filter option 2 failed: Expected condition failed: waiting for element to be clickable: By.cssSelector: [id*=':r'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56368/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34f5cef7057672f5ba0cabef0d907cfc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>5:41:03 pm</td>
+        <td>
+          Filter option 3 failed: Expected condition failed: waiting for element to be clickable: By.cssSelector: [id*=':r'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56368/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34f5cef7057672f5ba0cabef0d907cfc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log warning-bg">Warning</span></td>
+        <td>5:41:23 pm</td>
+        <td>
+          Filter option 1 failed: Expected condition failed: waiting for element to be clickable: By.cssSelector: [id*=':r'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56368}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56368/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 34f5cef7057672f5ba0cabef0d907cfc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:41:23 pm</td>
+        <td>
+          Customer filter testing executed.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:41:23 pm</td>
+        <td>
+          Clicked profile/avatar icon.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:41:25 pm</td>
+        <td>
+          Successfully logged out from Customers page.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Settings Page Navigation Test</p>
+            <p class="text-sm">
+              <span>5:41:26 pm</span> / <span>00:00:46:597</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Settings Page Navigation Test</h5>
+<span class='badge badge-success'>12.08.2025 5:41:26 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:42:12 pm</span>
+<span class='badge badge-default'>00:00:46:597</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:41:35 pm</td>
+        <td>
+          Logged in successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:41:35 pm</td>
         <td>
           Opened Settings page from sidebar.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:27 pm</td>
+        <td>5:41:36 pm</td>
         <td>
-          Opened Settings Card 1 (Users / Invite Users).
+          Opened Settings Card 1 (.MuiGrid-root:nth-child(1) > .MuiPaper-root) on attempt 1.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:28 pm</td>
+        <td>5:41:36 pm</td>
         <td>
-          Found 'Invite User' button by text (XPath).
+          Opened Settings Card 2 (.MuiGrid-root:nth-child(2) > .MuiPaper-root) on attempt 1.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:30 pm</td>
+        <td>5:41:37 pm</td>
         <td>
-          Clicked 'Invite User' button.
+          Clicked back icon (.MuiBox-root > svg) ? Back from Card 2
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:50 pm</td>
+        <td>5:41:37 pm</td>
         <td>
-          Found email field by id ':rf:'.
+          Scrolled to top of the page.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:51 pm</td>
+        <td>5:41:37 pm</td>
         <td>
-          Entered random email: user79101@example.com
+          Opened Settings Card 3 (.MuiGrid-root:nth-child(3) > .MuiPaper-root) on attempt 1.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:51 pm</td>
+        <td>5:41:37 pm</td>
         <td>
-          Found name field by id ':rg:'.
+          Clicked back icon (.MuiBox-root > svg) ? Back from Card 3
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:52 pm</td>
+        <td>5:41:37 pm</td>
         <td>
-          Entered random name: Name5162
+          Scrolled to top of the page.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:52 pm</td>
+        <td>5:41:37 pm</td>
         <td>
-          No permission checkboxes visible in dialog – skipping permissions selection.
+          Opened Settings Card 5 (.MuiGrid-root:nth-child(5) > .MuiPaper-root) on attempt 1.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:52 pm</td>
+        <td>5:41:38 pm</td>
         <td>
-          Clicked 'Invite / Save' button.
+          Clicked main Settings button (.MuiButton-root).
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:52 pm</td>
+        <td>5:41:38 pm</td>
+        <td>
+          Clicked special Settings button (.css-179ojzl-MuiButtonBase-root-MuiButton-root).
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:41:39 pm</td>
+        <td>
+          Back icon click intercepted in context 'Back from Card 5 (path:nth-child(3))', attempt 1: element click intercepted: Element <path d="M9 10h7a4 4 0 1 1 0 8h-1"></path> is not clickable at point (253, 96). Other element would receive the click: <path d="M13 14l-4 -4l4 -4"></path>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec3e22894a9cab8710ef949f441b9a7f, clickElement {id=f.5313D2E77CE7AD49EB7CA0B9D90EA239.d.ABF0A572F1D2CC2ABCECB7A5174E0E08.e.154}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64460/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ec3e22894a9cab8710ef949f441b9a7f)] -> css selector: .MuiBox-root > svg > path:nth-child(3)]
+Session ID: ec3e22894a9cab8710ef949f441b9a7f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:41:40 pm</td>
+        <td>
+          Clicked back icon via Actions in context 'Back from Card 5 (path:nth-child(3))', attempt 1.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:41:40 pm</td>
+        <td>
+          Scrolled to top of the page.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:41:40 pm</td>
+        <td>
+          Opened Settings Card 7 (.MuiGrid-root:nth-child(7) > .MuiPaper-root) on attempt 1.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:10 pm</td>
+        <td>
+          Back icon click intercepted in context 'Back from Card 7 (path:nth-child(1))', attempt 2: element click intercepted: Element <path d="M13 14l-4 -4l4 -4"></path> is not clickable at point (250, 92). Other element would receive the click: <path d="M9 10h7a4 4 0 1 1 0 8h-1"></path>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec3e22894a9cab8710ef949f441b9a7f, clickElement {id=f.5313D2E77CE7AD49EB7CA0B9D90EA239.d.ABF0A572F1D2CC2ABCECB7A5174E0E08.e.174}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64460}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64460/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ec3e22894a9cab8710ef949f441b9a7f)] -> css selector: .MuiBox-root > svg > path:nth-child(1)]
+Session ID: ec3e22894a9cab8710ef949f441b9a7f
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:10 pm</td>
+        <td>
+          Clicked back icon via Actions in context 'Back from Card 7 (path:nth-child(1))', attempt 2.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:10 pm</td>
+        <td>
+          Scrolled to top of the page.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:11 pm</td>
         <td>
           Clicked header / dashboard title (.css-1qtpij-MuiTypography-root).
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>3:18:53 pm</td>
+        <td>5:42:12 pm</td>
+        <td>
+          Clicked logout button from Settings flow.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:42:12 pm</td>
+        <td>
+          ? Settings page navigation flow executed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Settings - Invite User With Random Permissions</p>
+            <p class="text-sm">
+              <span>5:42:13 pm</span> / <span>00:00:38:489</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Settings - Invite User With Random Permissions</h5>
+<span class='badge badge-success'>12.08.2025 5:42:13 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:42:52 pm</span>
+<span class='badge badge-default'>00:00:38:489</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:22 pm</td>
+        <td>
+          Logged in successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:22 pm</td>
+        <td>
+          Opened Settings page from sidebar.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:25 pm</td>
+        <td>
+          Opened Settings Card 1 (Users / Invite Users).
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:26 pm</td>
+        <td>
+          Found 'Invite User' button by text (XPath).
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:27 pm</td>
+        <td>
+          Clicked 'Invite User' button.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:48 pm</td>
+        <td>
+          Found email field by id ':rf:'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:49 pm</td>
+        <td>
+          Entered random email: user99835@example.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:49 pm</td>
+        <td>
+          Found name field by id ':rg:'.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:49 pm</td>
+        <td>
+          Entered random name: Name9882
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:49 pm</td>
+        <td>
+          No permission checkboxes visible in dialog � skipping permissions selection.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:50 pm</td>
+        <td>
+          Clicked 'Invite / Save' button.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:50 pm</td>
+        <td>
+          Clicked header / dashboard title (.css-1qtpij-MuiTypography-root).
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:42:52 pm</td>
         <td>
           Clicked logout button after invite user.
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>3:18:53 pm</td>
+        <td>5:42:52 pm</td>
         <td>
-          ✅ Settings → Invite User with random info executed successfully.
+          ? Settings ? Invite User with random info executed successfully.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Settings - General Configuration Test</p>
+            <p class="text-sm">
+              <span>5:42:53 pm</span> / <span>00:00:12:471</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Settings - General Configuration Test</h5>
+<span class='badge badge-success'>12.08.2025 5:42:53 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:43:05 pm</span>
+<span class='badge badge-default'>00:00:12:471</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:43:04 pm</td>
+        <td>
+          Logged in successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:43:05 pm</td>
+        <td>
+          ? Settings General test failed: element click intercepted: Element <span class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10kunf-MuiTypography-root">...</span> is not clickable at point (119, 384). Other element would receive the click: <div class="css-183mqmm">...</div>
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78b2d66018111e33e7c342ae857aaaab, clickElement {id=f.FB7367DB181305B79452CB3238E669DE.d.EB3B0B6A10C54D9041EAB7B7A2E5976E.e.37}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64904/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (78b2d66018111e33e7c342ae857aaaab)] -> css selector: .MuiListItem-root:nth-child(7) .MuiTypography-root]
+Session ID: 78b2d66018111e33e7c342ae857aaaab
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='c:\Users\user\Zaperr\zaperr-selenium/test-output/screenshots/SettingsGeneralTest_20251208174305.png' src="c:\Users\user\Zaperr\zaperr-selenium/test-output/screenshots/SettingsGeneralTest_20251208174305.png">
+    
+    </div></div>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Settings - Orders Configuration Test</p>
+            <p class="text-sm">
+              <span>5:43:06 pm</span> / <span>00:00:19:242</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Settings - Orders Configuration Test</h5>
+<span class='badge badge-success'>12.08.2025 5:43:06 pm</span>
+<span class='badge badge-danger'>12.08.2025 5:43:26 pm</span>
+<span class='badge badge-default'>00:00:19:242</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:43:19 pm</td>
+        <td>
+          Logged in successfully.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:43:20 pm</td>
+        <td>
+          Opened Settings page from sidebar.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:43:23 pm</td>
+        <td>
+          Opened Orders settings card by CSS (.MuiGrid-root:nth-child(3) > .MuiPaper-root).
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:43:25 pm</td>
+        <td>
+          Clicked Save/Update button in Orders settings.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:43:25 pm</td>
+        <td>
+          Clicked right-side icon (.MuiIconButton-edgeEnd) after Orders settings.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:43:26 pm</td>
+        <td>
+          Clicked logout confirm button (.MuiButtonBase-root:nth-child(2) > .MuiBox-root).
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:43:26 pm</td>
+        <td>
+          ? Settings ? Orders configuration flow executed successfully.
         </td>
       </tr>
   </tbody>
@@ -219,25 +998,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 3, 2025 03:18:14 pm</h3>
+<h3>Dec 8, 2025 05:37:30 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 3, 2025 03:18:53 pm</h3>
+<h3>Dec 8, 2025 05:43:26 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>3</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>4</h3>
 </div></div>
 </div>
 </div>
@@ -253,13 +1032,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> tests passed
+<div><small data-tooltip='33%'>
+<b>3</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='44%'><b>4</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='22%'>2</b> others
 </small>
 </div>
 </div>
@@ -276,10 +1055,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='7%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='6%'><b>5</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>13</b> others
+<small data-tooltip='5%'><b>4</b> events failed,
+<b data-tooltip='%'>66</b> others
 </small>
 </div>
 </div>
@@ -295,7 +1074,7 @@
 </div></div>
 <script>
 var timeline = {
-"Settings - Invite User With Random Permissions":36.809
+"Login & Logout Test":80.743,"Dashboard Menu Button Navigation":20.553,"Merchant / Franchise Admin Auto Login Test":32.491,"Orders Status Update & Order Assign Test":19.849,"Customers Page Test":74.166,"Settings Page Navigation Test":46.597,"Settings - Invite User With Random Permissions":38.489,"Settings - General Configuration Test":12.471,"Settings - Orders Configuration Test":19.242
 };
 </script>
 <div class="row">
@@ -322,9 +1101,9 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
-warningParent: 0,
+passParent: 3,
+failParent: 4,
+warningParent: 2,
 skipParent: 0,
 childCount: 5,
 passChild: 0,
@@ -339,11 +1118,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
-failEvents: 0,
-warningEvents: 0,
+passEvents: 5,
+failEvents: 4,
+warningEvents: 5,
 skipEvents: 0,
-infoEvents: 13
+infoEvents: 61
 };
 </script>        </div>
       </div>

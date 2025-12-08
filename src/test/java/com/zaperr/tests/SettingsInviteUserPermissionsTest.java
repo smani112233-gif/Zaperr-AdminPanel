@@ -140,7 +140,7 @@ public class SettingsInviteUserPermissionsTest extends BaseTest {
                 driver.findElements(By.cssSelector("div[role='dialog'] .MuiFormControlLabel-root"));
 
             if (!permissionLabels.isEmpty()) {
-                WebElement firstLabel = permissionLabels.get(0);
+                WebElement firstLabel = permissionLabels.getFirst();
                 try {
                     js.executeScript("arguments[0].scrollIntoView({block:'center'});", firstLabel);
                     js.executeScript("arguments[0].click();", firstLabel);
